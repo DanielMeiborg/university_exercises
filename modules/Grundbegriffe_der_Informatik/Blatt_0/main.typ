@@ -9,6 +9,7 @@
   ))
 
 #set heading(numbering: none)
+#set text(lang: "de")
 
 = Aufgabe 2
 
@@ -48,4 +49,23 @@ $A sect B sect C = emptyset qed$
 
 = Aufgabe 3
 
-Die Mächtigkeit jeder Teilmenge $E$ von dem Kreuzprodukt einer endlichen Menge $V$ mit sich selbst ent
+Die Aussage sagt aus, dass man die Elemente einer Teilmenge eines kartesisches Produktes einer Menge mit sich selbst sowohl nacheinander als auch "spaltenweise" zählen kann. Für jedes Element in der Menge werden alle Elemente der Teilmenge gezählt, die dieses Element an erster Stelle haben. Die Summe dieser Zählungen entspricht der Anzahl aller Elemente der Teilmenge. Würde man das kartesische Produkt in einer Tabelle darstellen, so würde man bei der Zählung jede Spalte/Zeile einzeln durchgehen und jeweils die vorhandenen Elemente zählen. Die Aussage gibt an, dass man dadurch jedes Element der Teilmenge genau einmal zählt.
+
+= Aufgabe 4
+
+== a
+
+Wort:
+
+$B.C.A.C$
+
+Dekodiert Alice:
+
+$011.01.1.01$
+
+Dekodiert Bob:
+
+$01.1.0110.1$
+
+== b
+
