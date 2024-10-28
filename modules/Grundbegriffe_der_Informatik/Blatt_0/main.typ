@@ -45,7 +45,9 @@ $A sect B sect C = emptyset qed$
 
 == d
 
-...
+$A = {1, {1}}$
+
+$B = {1}$
 
 = Aufgabe 3
 
