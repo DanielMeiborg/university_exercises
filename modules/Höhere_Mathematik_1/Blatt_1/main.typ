@@ -47,6 +47,10 @@ $0 = -x² + 4x - 3 => x = (-4 plus.minus sqrt(16 -12))/2 => x = -1 or x = -3$
 
 $=> x in [-3, -1] union [1, 3]$
 
+== c
+
+$(-5, 1)$
+
 = Aufgabe 2
 
 == a
@@ -57,9 +61,13 @@ $A = {1/x - 1/y: x,y in RR, x,y >= 1}$
 
 zz: $A = (-1, 1)$
 
-$A = {y/(x y)-x/(x y): x,y in RR, x,y >= 1} = {(y-x)/(x y): x,y in RR, x,y >= 1}$
+$1/x$ wird maximiert wenn $x -> 1$ für $x in RR and x >= 1$. $-1/y$ wird entsprechend für $y -> infinity$ für $y in RR and y >= 1$ minimiert. Für ein Supremum wird $x$ dementsprechend gleich $1$ gesetzt und $y$ maximiert. Das Supremum ist $1 - 0 = 0$. Es liegt kein Maximum vor. Analog gilt für das Infimum $-1 - 0 = -1$. $A = (-1, 1) qed$
 
-Da $x,y >= 1$ ist
+=== ii
+
+zz: $B$ hat kein Maximum oder Supremum und ein Minimum bei $0$
+
+Da sowohl der Nenner als auch der Zähler des Bruchs stets positiv sind, gilt $inf(B) >= 0$. Für $x = 0$ ist $0$ in $B$. Somit ist $0$ das Minimum. Da für $x -> infinity$ der Bruch ebenfalls gegen $infinity$ geht, gibt es kein Maximum oder Supremum. $qed$
 
 == b
 
