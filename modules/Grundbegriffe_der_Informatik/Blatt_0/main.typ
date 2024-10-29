@@ -6,6 +6,9 @@
     (
       name: "Daniel Meiborg 2599041",
     ),
+    (
+      name: "Jan Mansel 2599265"
+    )
   ))
 
 #set heading(numbering: none)
