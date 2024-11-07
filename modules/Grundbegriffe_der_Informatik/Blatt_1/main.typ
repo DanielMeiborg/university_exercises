@@ -6,6 +6,9 @@
     (
       name: "Daniel Meiborg 2599041",
     ),
+    (
+      name: "Jan Mansel 2599265"
+    )
   ))
 
 #set heading(numbering: none)
@@ -51,7 +54,18 @@ Daraus folgt, dass $(x, y)∈(A∪B)×C$ $qed$.
 
 
 == a
-// TODO
+
+Gegenbeispiel:
+
+$B = {1}$
+
+$2^B = {{}, {1}}$
+
+$A = {{}, ({1}, {})$
+
+$A times 2^B = {({}, {}), ({}, ({1}, {})), ({1}, {}), ({1}, ({1}, {}))}$
+
+$(A times 2^B) sect A = {({1}, {})} != {}$
 
 == b
 
@@ -64,6 +78,9 @@ Gegenbeispiel: $f(x) = e^x, g(x) = x², h(x) = e^(2x)$. $h(x)$ ist injektiv, $g(
 == d
 
 // TODO
+
+zz: $A, B$ sind endliche Mengen mit $|A| = |B|$, $f: A -> B$: $f$ injektiv => $f$ surjektiv
+
 
 = Aufgabe 3
 
@@ -91,14 +108,17 @@ $L'' = {(x, -x) | x in [-4, 0]} union {(x, x - 2) | x in (0, 2]}$
 
 == a
 
-$"sieht"_B((1,4)) = {(1,1), (5,4)}$
+$"sieht"_B((1,4)) = {(1,1), (1,2), (1,3), (2,4), (3, 4), (4,4), (5,4), (2,5), (3, 6), (4,7), (5,8), (6,9), (7,10), (8,11), (1, 5), (1,6)}$
 
 == b
-// TODO
+
+$n in NN$
+
+$"sieht"'(f) = ({(f_1, n) | (f_1, f_2) = f} union {(n, f_2) | (f_1, f_2) = f} union {(f_1 + z, f_2 + z)} | z in ZZ and f_1 + z > 0 and f_2 + z > 0) without f$
 
 == c
 
-// TODO
+$"sieht"_B(f) = {g | g in "sieht"'(f) and "getrennt"(f, g) = 0}$
 
 == d
 
@@ -106,8 +126,8 @@ $n_"rot" = |{x | x in "sieht"_B(f) and x in B_"rot"}|$
 
 $n_"weiß" = |{x | x in "sieht"_B(f) and x in B_"weiß"}|$
 
-$"kontrolliert"_B (f) = "rot" "wenn" n_"rot" > n_"weiß"$
+$"kontrolliert"_B (f) = "rot" "wenn" n_"rot" > n_"weiß" and not f in B_"rot"$
 
-$"kontrolliert"_B (f) = "weiß" "wenn" n_"rot" < n_"weiß"$
+$"kontrolliert"_B (f) = "weiß" "wenn" n_"rot" < n_"weiß" and not f in B_"weiß"$
 
-$"kontrolliert"_B (f) = ⊥ "wenn" n_"rot" = n_"weiß"$
+$"kontrolliert"_B (f) = ⊥ "wenn" n_"rot" = n_"weiß" or f in B_"rot" or f in B_"weiß"$
