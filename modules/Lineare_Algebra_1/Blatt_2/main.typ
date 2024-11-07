@@ -43,13 +43,15 @@ Umformen der Gleichungen:
 
 $x_1 = x_2 + 2y_2 - 2y_1$
 
-$<=> 2x_2 + 2y_2 - 4y_1 - y_1 = 2x_2 - y_2$
+$<=> 2x_2 + 4y_2 - 4y_1 - y_1 = 2x_2 - y_2$
 
-$<=> y_2 - 5y_1 = 0$
+$<=> 5y_2 - 5y_1 = 0$
 
-$<=> y_2 = 5y_1$
+$<=> y_2 = y_1$
 
-Somit ist $f$ nicht injektiv.
+$<=> x_1 = x_2$
+
+Somit ist $f$ injektiv.
 
 === surjektiv
 
@@ -63,7 +65,7 @@ $-3x = z_1 - 2z_2$
 
 $<=> x = 2/3 z_2 - z_1 / 3$
 
-Somit ist $f$ surjektiv.
+Somit ist $f$ bijektiv.
 
 Umkehrabbildung: $g: RR times RR -> RR times RR, (z_1, z_2) -> (2/3 z_2 - z_1 / 3, 2/5 z_1 - z_2/5)$
 
@@ -93,7 +95,15 @@ $f: ZZ times ZZ -> ZZ times ZZ, (x, y) -> (2x + y, x + y)$
 
 $2x_1 + y_1 = 2x_2 + y_2 and x_1 + y_1 = x_2 + y_2 =>? x_1 = x_2 and y_1 = y_2$
 
-// TODO
+Zweite Gleichung von erster subtrahieren:
+
+$2x_1 - x_1 + y_1 - y_1 = 2x_2 - x_2 + y_2 - y_2 <=> x_1 = x_2$
+
+Einsetzen in zweite Gleichung:
+
+$x_2 + y_1 = x_2 + y_2 <=> y_1 = y_2$
+
+Somit ist $f$ injektiv.
 
 === surjektiv
 
@@ -105,7 +115,7 @@ $-y = z_1 - 2z_2$
 
 $y = 2z_2 - z_1$
 
-Somit ist $f$ surjektiv.
+Somit ist $f$ bijektiv.
 
 Umkehrabbildung: $g: ZZ times ZZ -> ZZ times ZZ, (z_1, z_2) -> (z_1 - z_2, 2z_2 - z_1)$
 
@@ -123,7 +133,7 @@ Per Definition der Umkehrfunktion $f compose f^(-1) = id$
 
 $=> f(f^(-1)(a)) = a$
 
-Da $a in B$ angenommen ist, ist $f(f^(-1)(a)) in B$ was ein Widerspruch ist. $qed$
+Da $a in B$ angenommen ist, ist $f(f^(-1)(a)) = a in B$ was ein Widerspruch ist. $qed$
 
 == b
 
@@ -133,4 +143,7 @@ zz: $f "surjektiv" <=> forall B subset N: f(f^(-1)(B)) = B$
 
 Aus a folgt, dass $f(f^(-1)(B)) subset.eq B$
 
-Da $f$ surjektiv ist, gibt es für jedes $a in B' = f^(-1) (B)$ ein $b in B$ sodass $f(b) = a$.
+Angenommen, es gibt ein $b in f(f^(-1)(B))$ sodass $b not in B$.
+
+Sei $a$ so dass $b = f(a)$ und $c$ so dass $a = f^(-1)(c)$.
+
